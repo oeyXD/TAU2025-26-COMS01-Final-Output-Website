@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(29, 39, 48);
+    width: auto;
+    height: 100%;
+}
+.view1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.startButton {
+    height: 40px;
+    width: 200px;
+}
