@@ -22,10 +22,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-left: 10%;
-    transition: opacity 0.5s ease-in-out;
 } #view2.appear {
     opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+} #view2.fade-out {
+    opacity: 0;
 }
 
 #view3 {
@@ -33,12 +34,23 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+} #view3.appear {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+} #view3.fade-out {
+    opacity: 0;
 }
+
 #view4 {
     display: none;
     justify-content: center;
     align-items: center;
     height: 100vh;
+} #view4.appear {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+} #view4.fade-out {
+    opacity: 0;
 }
 
 #view5 {
@@ -46,29 +58,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-}
-#startButton {
-    font-size: 20px;
-    height: 80px;
-    width: 250px;
-    background-color: rgb(255, 25, 0);
-    border-radius: 40px;
-    opacity: 0.75;
-    color: white;
-    border-width: 5px;
-    border-color: grey;
-    font-family: Arial, Helvetica, sans-serif;
-}
-#startButton:hover {
+}#view5.appear {
     opacity: 1;
-    cursor: pointer;
-    background-color: rgb(255, 0, 0);
+    transition: opacity 0.5s ease-in-out;
+} #view5.fade-out {
+    opacity: 0;
 }
 
-#startButton:active {
-    background-color: rgb(80, 228, 0);
-    color: black;
-}
 h1 {
     color: white;
     font-family: Arial, Helvetica, sans-serif;
@@ -87,8 +83,69 @@ p {
 .mainContainer {
     display: grid;
     grid-template-columns: 10% auto 10%;
+    height: 100vh;
 }
 #ProPic {
     height:500px;
     justify-content: center;
+}
+
+.nextViewButton {
+    font-size: 20px;
+    height: 60px;
+    width: 100px;
+    background-color: rgb(6, 82, 163);
+    border-radius: 30px;
+    opacity: 0.75;
+    color: white;
+    border-width: 5px;
+    border-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+} .nextViewButton:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: rgb(0, 100, 210);
+} .nextViewButton:active {
+    background-color: rgb(80, 228, 0);
+    color: black;
+}
+
+.prevViewButton {
+    font-size: 20px;
+    height: 60px;
+    width: 100px;
+    background-color: rgb(163, 6, 6);
+    border-radius: 30px;
+    opacity: 0.75;
+    color: white;
+    border-width: 5px;
+    border-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+} .prevViewButton:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: rgb(210, 0, 0);
+} .prevViewButton:active {
+    background-color: rgb(80, 228, 0);
+    color: black;
+}
+
+#startButton, #explode {
+    font-size: 20px;
+    height: 80px;
+    width: 250px;
+    background-color: rgb(255, 25, 0);
+    border-radius: 40px;
+    opacity: 0.75;
+    color: white;
+    border-width: 5px;
+    border-color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+} #startButton:hover, #explode:hover {
+    opacity: 1;
+    cursor: pointer;
+    background-color: rgb(255, 0, 0);
+} #startButton:active, #explode:active {
+    background-color: rgb(80, 228, 0);
+    color: black;
 }
