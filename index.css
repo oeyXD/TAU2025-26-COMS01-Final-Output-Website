@@ -1,6 +1,6 @@
 
 body {
-    background-color: rgb(19, 22, 26);
+    background-color: rgb(28, 33, 39);
     width: auto;
     height: 100%;
     margin: 20px;
@@ -13,9 +13,7 @@ body {
     height: 100vh;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-} #view1.fade-out {
-    opacity: 0;
-}
+} #view1.fade-out {opacity: 0;}
 
 #view2 {
     display: none;
@@ -25,9 +23,7 @@ body {
 } #view2.appear {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-} #view2.fade-out {
-    opacity: 0;
-}
+} #view2.fade-out {opacity: 0;}
 
 #view3 {
     display: none;
@@ -37,9 +33,7 @@ body {
 } #view3.appear {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-} #view3.fade-out {
-    opacity: 0;
-}
+} #view3.fade-out {opacity: 0;}
 
 #view4 {
     display: none;
@@ -49,9 +43,7 @@ body {
 } #view4.appear {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-} #view4.fade-out {
-    opacity: 0;
-}
+} #view4.fade-out {opacity: 0;}
 
 #view5 {
     display: none;
@@ -61,9 +53,7 @@ body {
 }#view5.appear {
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
-} #view5.fade-out {
-    opacity: 0;
-}
+} #view5.fade-out {opacity: 0;}
 
 h1 {
     color: white;
@@ -75,11 +65,28 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
 }
+ul {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
 .container {
     display: grid;
     grid-template-columns: auto auto;
-
+    margin: 10px;
 }
+.gridContainer {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
 .mainContainer {
     display: grid;
     grid-template-columns: 10% auto 10%;
@@ -88,6 +95,26 @@ p {
 #ProPic {
     height:500px;
     justify-content: center;
+}
+.gamePic {
+    width:200px;
+    justify-content: center;
+}.gamePic:hover {
+    width: 210px;
+    transition: 0.1s ease-in-out;
+}.gamePic:active {
+    width: 220px;
+    transition: 0.1s ease-in-out;
+}
+.musicPic {
+    height:200px;
+    justify-content: center;
+} .musicPic:hover {
+    height: 210px;
+    transition: 0.1s ease-in-out;
+} .musicPic:active {
+    height: 250px;
+    transition: 0.1s ease-in-out;
 }
 
 .nextViewButton {
