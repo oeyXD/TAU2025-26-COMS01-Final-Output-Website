@@ -82,7 +82,7 @@ h3 {
     margin: 10px;
 }
 .gridContainer {
-    margin: 10px;
+    margin: 5px;
     display: grid;
     grid-template-columns: auto auto;
 }
@@ -97,14 +97,14 @@ h3 {
     justify-content: center;
 }
 .gamePic {
-    width:200px;
+    width: 250px;
     justify-content: center;
 }.gamePic:hover {
-    width: 210px;
+    width: 260px;
     transition: 0.1s ease-in-out;
 }.gamePic:active {
-    width: 220px;
-    transition: 0.1s ease-in-out;
+    width: 270px;
+    transition: 0.05s ease-in-out;
 }
 .musicPic {
     height:200px;
@@ -116,6 +116,15 @@ h3 {
     height: 250px;
     transition: 0.1s ease-in-out;
 }
+
+.airBusPic {
+    width: 400px;
+    justify-content: center;
+} .airBusPic:hover {
+    padding: 10px;
+    transition: 0.1s ease-in-out;
+}
+
 
 .nextViewButton {
     font-size: 20px;

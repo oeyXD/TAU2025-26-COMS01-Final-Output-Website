@@ -1,7 +1,7 @@
 
 const audio = document.getElementById('bgMusic')
-audio.volume = 0;
-//audio.volume = 0.75;
+//audio.volume = 0;
+audio.volume = 0.75;
 audio.loop = true;
 let pageNum = 1;
 
